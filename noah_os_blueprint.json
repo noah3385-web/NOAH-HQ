@@ -1,0 +1,636 @@
+{
+  "sandbox_prefix": "Noah OS Sandbox",
+  "api_notes": {
+    "base_url": "https://api.clickup.com/api/v2",
+    "verified_endpoints": [
+      "GET /team",
+      "GET /team/{team_id}/space",
+      "GET /space/{space_id}/folder",
+      "POST /space/{space_id}/folder",
+      "GET /folder/{folder_id}/list",
+      "POST /folder/{folder_id}/list",
+      "GET /list/{list_id}/task",
+      "POST /list/{list_id}/task"
+    ],
+    "manual_features": [
+      "custom fields",
+      "tags",
+      "dashboards",
+      "automations",
+      "recurring tasks",
+      "native templates",
+      "relationship fields",
+      "docs/pages"
+    ]
+  },
+  "folders": [
+    {
+      "name": "Noah OS Sandbox - Command Center and Capture",
+      "description": "# Noah OS Sandbox - Command Center and Capture\n\nWhat belongs here: Folder-level area records, tasks, notes, and operating items for Noah OS Sandbox - Command Center and Capture.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan.",
+      "lists": [
+        {
+          "name": "Noah Command Center",
+          "description": "# Noah Command Center\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Noah Command Center.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Universal Capture Inbox",
+          "description": "# Universal Capture Inbox\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Universal Capture Inbox.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan.\n\n## Universal Capture Schema\n- Raw Capture\n- Source Method\n- Work or Personal\n- Object Type: Task, Note, Record, Project, Metric\n- Related Person\n- Related Company / Team\n- Related Lead / Loan\n- Suggested Category\n- Suggested Due Date\n- Suggested Priority\n- Next Action\n- Needs Review\n- Notes"
+        },
+        {
+          "name": "AI Review Queue",
+          "description": "# AI Review Queue\n\nWhat belongs here: List-level records, tasks, notes, and operating items for AI Review Queue.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Daily Operating Tasks",
+          "description": "# Daily Operating Tasks\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Daily Operating Tasks.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Weekly Monthly Quarterly Reviews",
+          "description": "# Weekly Monthly Quarterly Reviews\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Weekly Monthly Quarterly Reviews.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Implementation Checklist",
+          "description": "# Implementation Checklist\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Implementation Checklist.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Manual Setup Required",
+          "description": "# Manual Setup Required\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Manual Setup Required.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Build Limitations and Workarounds",
+          "description": "# Build Limitations and Workarounds\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Build Limitations and Workarounds.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Noah OS Operating Manual",
+          "description": "# Noah OS Operating Manual\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Noah OS Operating Manual.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        }
+      ]
+    },
+    {
+      "name": "Noah OS Sandbox - Mortgage Leads and Loan Pipeline",
+      "description": "# Noah OS Sandbox - Mortgage Leads and Loan Pipeline\n\nWhat belongs here: Folder-level area records, tasks, notes, and operating items for Noah OS Sandbox - Mortgage Leads and Loan Pipeline.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan.",
+      "lists": [
+        {
+          "name": "New Leads",
+          "description": "# New Leads\n\nWhat belongs here: List-level records, tasks, notes, and operating items for New Leads.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Active Pre-Approvals",
+          "description": "# Active Pre-Approvals\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Active Pre-Approvals.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Under Contract Active Loan Files",
+          "description": "# Under Contract Active Loan Files\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Under Contract Active Loan Files.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Post-Close Retention Refinance Follow-Up",
+          "description": "# Post-Close Retention Refinance Follow-Up\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Post-Close Retention Refinance Follow-Up.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Loan Issues Escalations",
+          "description": "# Loan Issues Escalations\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Loan Issues Escalations.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        }
+      ]
+    },
+    {
+      "name": "Noah OS Sandbox - Partner CRM and Business Development",
+      "description": "# Noah OS Sandbox - Partner CRM and Business Development\n\nWhat belongs here: Folder-level area records, tasks, notes, and operating items for Noah OS Sandbox - Partner CRM and Business Development.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan.",
+      "lists": [
+        {
+          "name": "Realtor Contacts",
+          "description": "# Realtor Contacts\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Realtor Contacts.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Realtor Teams",
+          "description": "# Realtor Teams\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Realtor Teams.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Brokerages",
+          "description": "# Brokerages\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Brokerages.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "New Business Development Pipeline",
+          "description": "# New Business Development Pipeline\n\nWhat belongs here: List-level records, tasks, notes, and operating items for New Business Development Pipeline.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Existing Partner Management",
+          "description": "# Existing Partner Management\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Existing Partner Management.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Partner Relationship Notes",
+          "description": "# Partner Relationship Notes\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Partner Relationship Notes.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Partner ROI Budget Records",
+          "description": "# Partner ROI Budget Records\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Partner ROI Budget Records.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        }
+      ]
+    },
+    {
+      "name": "Noah OS Sandbox - Events and Marketing",
+      "description": "# Noah OS Sandbox - Events and Marketing\n\nWhat belongs here: Folder-level area records, tasks, notes, and operating items for Noah OS Sandbox - Events and Marketing.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan.",
+      "lists": [
+        {
+          "name": "Events",
+          "description": "# Events\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Events.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Marketing Campaigns",
+          "description": "# Marketing Campaigns\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Marketing Campaigns.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Content Production",
+          "description": "# Content Production\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Content Production.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Vendors",
+          "description": "# Vendors\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Vendors.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Event Budgets AP AR",
+          "description": "# Event Budgets AP AR\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Event Budgets AP AR.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        }
+      ]
+    },
+    {
+      "name": "Noah OS Sandbox - Internal Team Management",
+      "description": "# Noah OS Sandbox - Internal Team Management\n\nWhat belongs here: Folder-level area records, tasks, notes, and operating items for Noah OS Sandbox - Internal Team Management.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan.",
+      "lists": [
+        {
+          "name": "Internal Employees",
+          "description": "# Internal Employees\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Internal Employees.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Sales Coaching",
+          "description": "# Sales Coaching\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Sales Coaching.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Performance Management",
+          "description": "# Performance Management\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Performance Management.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Compensation Management",
+          "description": "# Compensation Management\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Compensation Management.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Internal Leadership Operations Coordination",
+          "description": "# Internal Leadership Operations Coordination\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Internal Leadership Operations Coordination.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Employee Development Plans",
+          "description": "# Employee Development Plans\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Employee Development Plans.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        }
+      ]
+    },
+    {
+      "name": "Noah OS Sandbox - Reporting ROI and Business Planning",
+      "description": "# Noah OS Sandbox - Reporting ROI and Business Planning\n\nWhat belongs here: Folder-level area records, tasks, notes, and operating items for Noah OS Sandbox - Reporting ROI and Business Planning.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan.",
+      "lists": [
+        {
+          "name": "Sales Metrics",
+          "description": "# Sales Metrics\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Sales Metrics.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Pipeline Projections",
+          "description": "# Pipeline Projections\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Pipeline Projections.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Partner ROI Reporting",
+          "description": "# Partner ROI Reporting\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Partner ROI Reporting.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Team Business Planning",
+          "description": "# Team Business Planning\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Team Business Planning.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Leadership Reporting",
+          "description": "# Leadership Reporting\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Leadership Reporting.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Future Business Planning",
+          "description": "# Future Business Planning\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Future Business Planning.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "AI Technology Development",
+          "description": "# AI Technology Development\n\nWhat belongs here: List-level records, tasks, notes, and operating items for AI Technology Development.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        }
+      ]
+    },
+    {
+      "name": "Noah OS Sandbox - Career Manager Feedback and Coaching",
+      "description": "# Noah OS Sandbox - Career Manager Feedback and Coaching\n\nWhat belongs here: Folder-level area records, tasks, notes, and operating items for Noah OS Sandbox - Career Manager Feedback and Coaching.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan.",
+      "lists": [
+        {
+          "name": "Noah Career Plan",
+          "description": "# Noah Career Plan\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Noah Career Plan.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Manager Feedback",
+          "description": "# Manager Feedback\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Manager Feedback.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Business Coach Sessions",
+          "description": "# Business Coach Sessions\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Business Coach Sessions.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Career Milestones",
+          "description": "# Career Milestones\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Career Milestones.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Skill Development",
+          "description": "# Skill Development\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Skill Development.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        }
+      ]
+    },
+    {
+      "name": "Noah OS Sandbox - Personal Finance",
+      "description": "# Noah OS Sandbox - Personal Finance\n\nWhat belongs here: Folder-level area records, tasks, notes, and operating items for Noah OS Sandbox - Personal Finance.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan.",
+      "lists": [
+        {
+          "name": "Household Budget",
+          "description": "# Household Budget\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Household Budget.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Recurring Payments",
+          "description": "# Recurring Payments\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Recurring Payments.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Savings Goals",
+          "description": "# Savings Goals\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Savings Goals.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Retirement Investments",
+          "description": "# Retirement Investments\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Retirement Investments.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Personal Financial Planning",
+          "description": "# Personal Financial Planning\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Personal Financial Planning.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Personal Income Taxes",
+          "description": "# Personal Income Taxes\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Personal Income Taxes.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Property Taxes",
+          "description": "# Property Taxes\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Property Taxes.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        }
+      ]
+    },
+    {
+      "name": "Noah OS Sandbox - Home and Household",
+      "description": "# Noah OS Sandbox - Home and Household\n\nWhat belongs here: Folder-level area records, tasks, notes, and operating items for Noah OS Sandbox - Home and Household.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan.",
+      "lists": [
+        {
+          "name": "Home Maintenance",
+          "description": "# Home Maintenance\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Home Maintenance.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Home Improvements",
+          "description": "# Home Improvements\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Home Improvements.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Household Admin",
+          "description": "# Household Admin\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Household Admin.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Vendors Service Providers",
+          "description": "# Vendors Service Providers\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Vendors Service Providers.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        }
+      ]
+    },
+    {
+      "name": "Noah OS Sandbox - Health and Medical",
+      "description": "# Noah OS Sandbox - Health and Medical\n\nWhat belongs here: Folder-level area records, tasks, notes, and operating items for Noah OS Sandbox - Health and Medical.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan.",
+      "lists": [
+        {
+          "name": "Medical Reminders",
+          "description": "# Medical Reminders\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Medical Reminders.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Appointments",
+          "description": "# Appointments\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Appointments.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Health Tasks",
+          "description": "# Health Tasks\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Health Tasks.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Medical Data Reference Index",
+          "description": "# Medical Data Reference Index\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Medical Data Reference Index.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        }
+      ]
+    },
+    {
+      "name": "Noah OS Sandbox - Personal Relationships Events and Travel",
+      "description": "# Noah OS Sandbox - Personal Relationships Events and Travel\n\nWhat belongs here: Folder-level area records, tasks, notes, and operating items for Noah OS Sandbox - Personal Relationships Events and Travel.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan.",
+      "lists": [
+        {
+          "name": "Personal Contacts",
+          "description": "# Personal Contacts\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Personal Contacts.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Relationship Reminders",
+          "description": "# Relationship Reminders\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Relationship Reminders.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Personal Events",
+          "description": "# Personal Events\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Personal Events.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Travel Planning",
+          "description": "# Travel Planning\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Travel Planning.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        }
+      ]
+    },
+    {
+      "name": "Noah OS Sandbox - Hobbies Creative and Personal Knowledge",
+      "description": "# Noah OS Sandbox - Hobbies Creative and Personal Knowledge\n\nWhat belongs here: Folder-level area records, tasks, notes, and operating items for Noah OS Sandbox - Hobbies Creative and Personal Knowledge.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan.",
+      "lists": [
+        {
+          "name": "Hobbies",
+          "description": "# Hobbies\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Hobbies.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Creative Projects",
+          "description": "# Creative Projects\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Creative Projects.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Notes",
+          "description": "# Notes\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Notes.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Memories",
+          "description": "# Memories\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Memories.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Ideas",
+          "description": "# Ideas\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Ideas.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        }
+      ]
+    },
+    {
+      "name": "Noah OS Sandbox - Personal Career and Development",
+      "description": "# Noah OS Sandbox - Personal Career and Development\n\nWhat belongs here: Folder-level area records, tasks, notes, and operating items for Noah OS Sandbox - Personal Career and Development.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan.",
+      "lists": [
+        {
+          "name": "Personal Career Goals",
+          "description": "# Personal Career Goals\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Personal Career Goals.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Learning",
+          "description": "# Learning\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Learning.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Personal Milestones",
+          "description": "# Personal Milestones\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Personal Milestones.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        }
+      ]
+    },
+    {
+      "name": "Noah OS Sandbox - Sensitive Personal Data Index",
+      "description": "# Noah OS Sandbox - Sensitive Personal Data Index\n\nWhat belongs here: Folder-level area records, tasks, notes, and operating items for Noah OS Sandbox - Sensitive Personal Data Index.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan.",
+      "lists": [
+        {
+          "name": "Password Reference Index",
+          "description": "# Password Reference Index\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Password Reference Index.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Important Personal Data Reference Index",
+          "description": "# Important Personal Data Reference Index\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Important Personal Data Reference Index.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        }
+      ]
+    },
+    {
+      "name": "Noah OS Sandbox - Archive",
+      "description": "# Noah OS Sandbox - Archive\n\nWhat belongs here: Folder-level area records, tasks, notes, and operating items for Noah OS Sandbox - Archive.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan.",
+      "lists": [
+        {
+          "name": "Archived Work Items",
+          "description": "# Archived Work Items\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Archived Work Items.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Archived Personal Items",
+          "description": "# Archived Personal Items\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Archived Personal Items.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Archived Notes",
+          "description": "# Archived Notes\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Archived Notes.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Archived Completed Projects",
+          "description": "# Archived Completed Projects\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Archived Completed Projects.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        },
+        {
+          "name": "Dormant Relationships",
+          "description": "# Dormant Relationships\n\nWhat belongs here: List-level records, tasks, notes, and operating items for Dormant Relationships.\n\nHow Noah should use it: capture items here first, keep one clear next action on every actionable task, and move or link work to the correct operating area during review.\n\nFields to eventually add: Domain, Module, Object Type, Stage, Related Person/Company, Follow-Up Date, Waiting On, Needs Review, Priority, and Last Reviewed Date.\n\nStatuses/stages: start with ClickUp defaults for the MVP; later configure custom statuses from manual_setup.md.\n\nManual setup remaining: add native custom fields, tags, views, dashboards, automations, relationships, and recurring task rules where supported by your ClickUp plan."
+        }
+      ]
+    }
+  ],
+  "command_center_tasks": [
+    "AI Recommended Next Action",
+    "Top 3 Priorities Today",
+    "Must-Do Today",
+    "Overdue and At-Risk Items",
+    "New Leads / Leads Needing Contact",
+    "Active Loan Risks",
+    "Realtor / Partner Follow-Ups",
+    "Internal Team Follow-Ups",
+    "Events / Marketing Due Soon",
+    "Reporting / ROI / Budget Items Due Soon",
+    "Personal Critical Tasks",
+    "Capture Inbox Items Needing Review",
+    "Evening Wrap-Up"
+  ],
+  "daily_tasks": [
+    "Morning Briefing",
+    "Evening Wrap-Up",
+    "Check New Leads",
+    "Check Active Loan Risks",
+    "Check Partner Follow-Ups",
+    "Check Internal Team Follow-Ups",
+    "Check Personal Critical Tasks"
+  ],
+  "review_tasks": [
+    "Weekly Review",
+    "Monthly Business Review",
+    "Monthly Personal Finance Review",
+    "Quarterly Planning Review",
+    "Annual Planning Review"
+  ],
+  "reference_tasks": [
+    {
+      "list": "New Leads",
+      "name": "REFERENCE - Mortgage Pipeline Stages",
+      "description": "Mortgage Stages:\n- New Lead Received\n- Lead Info Incomplete\n- Contact Attempt 1\n- Contact Attempt 2\n- Contact Attempt 3\n- Contact Established\n- Unable to Contact\n- Application Link Sent\n- Application Started\n- Application Submitted\n- Pending Customer Docs\n- Pending Income Docs\n- Pending Asset Docs\n- Pending Credit Review\n- Pending Credit Repair\n- Pending Loan Officer Review\n- Opportunity / Structuring\n- Pre-Approval Issued\n- Declined\n- Contract Watch / Future Follow-Up\n- Under Contract\n- Contract Received\n- Pending Operations Setup\n- Setup Complete\n- Pending Loan Officer Sale / Lock Conversation\n- Loan Sold / Lock Complete\n- Pending Disclosures\n- Disclosures Sent\n- Disclosures Signed\n- Appraisal Ordered\n- Appraisal Paid\n- Submitted to Underwriting\n- Conditional Approval\n- Conditions Pending Customer\n- Conditions Pending Processor\n- Conditions Pending Loan Officer\n- Qualification Issue / Escalation\n- Final Approval\n- Closing Disclosure Balancing\n- Final Cash to Close Sent\n- Closing Scheduled\n- Closed\n- Funded\n- Customer Thank You Sent\n- Realtor Thank You Sent\n- Refinance Opportunity\n- Complete / Archived"
+    },
+    {
+      "list": "Noah OS Operating Manual",
+      "name": "REFERENCE - Relationship Mapping Rules",
+      "description": "Relationship Mapping Rules:\n- Lead / Loan File -> Borrower\n- Borrower -> Source Realtor\n- Source Realtor -> Realtor Team\n- Realtor Team -> Brokerage\n- Realtor / Team / Brokerage -> Primary Loan Officer\n- Partner -> Events\n- Partner -> ROI Records\n- Employee -> Coaching Tasks\n- Employee -> Performance Tasks\n- Event -> Partner / Vendor / Budget / ROI\n\nUntil native relationship fields are configured, use task descriptions with these labels:\n- Related Borrower:\n- Related Realtor:\n- Related Realtor Team:\n- Related Brokerage:\n- Related Loan Officer:\n- Related Partner:\n- Related Event:\n- Related Employee:\n- Related Vendor:\n- Related Loan File:\n- Related Report:"
+    }
+  ],
+  "template_tasks": [
+    {
+      "list": "New Leads",
+      "name": "TEMPLATE - New Lead",
+      "description": "Template checklist:\n- Borrower name\n- Contact info\n- Lead source\n- Source realtor\n- Realtor team\n- Brokerage\n- State\n- Loan officer owner\n- Current mortgage stage\n- Initial contact task\n- Contact Attempt 1\n- Contact Attempt 2\n- Contact Attempt 3\n- Application task\n- Document follow-up\n- Realtor update task\n- Next action\n- Follow-up date\n- Notes"
+    },
+    {
+      "list": "Under Contract Active Loan Files",
+      "name": "TEMPLATE - Active Loan",
+      "description": "Template checklist:\n- Borrower / file name\n- Realtor\n- Team / brokerage\n- Contract received\n- Operations setup\n- Sale / lock\n- Disclosures sent\n- Disclosures signed\n- Appraisal ordered / paid\n- Submitted to underwriting\n- Conditions pending\n- Final approval\n- Closing disclosure\n- Cash to close sent\n- Closing scheduled\n- Closed\n- Funded\n- Customer thank-you\n- Realtor thank-you\n- Refinance follow-up"
+    },
+    {
+      "list": "Realtor Contacts",
+      "name": "TEMPLATE - Realtor Contact",
+      "description": "Template checklist:\n- Name\n- Contact info\n- Team\n- Brokerage\n- State / market\n- Primary loan officer\n- Last touch date\n- Next touch date\n- Relationship health\n- Leads sent\n- Closed business\n- Events\n- ROI notes\n- Personal preferences\n- Birthday / important dates\n- Notes\n- Next action"
+    },
+    {
+      "list": "Realtor Teams",
+      "name": "TEMPLATE - Realtor Team",
+      "description": "Template checklist:\n- Team name\n- Brokerage\n- Team owner / leader\n- Members\n- Primary loan officer\n- Events\n- Budget / spend\n- ROI\n- Education sessions\n- Relationship reviews\n- Business planning\n- Notes\n- Next action"
+    },
+    {
+      "list": "New Business Development Pipeline",
+      "name": "TEMPLATE - Business Development Prospect",
+      "description": "Template checklist:\n- Prospect name\n- Company / brokerage\n- Source\n- Stage\n- Research needed\n- Initial outreach\n- Follow-up 1\n- Follow-up 2\n- Follow-up 3\n- Meeting scheduled\n- Discovery completed\n- Value proposition sent\n- Trial partnership\n- Onboarding\n- Next action"
+    },
+    {
+      "list": "Existing Partner Management",
+      "name": "TEMPLATE - Existing Partner Review",
+      "description": "Template checklist:\n- Partner name\n- Partner type\n- Relationship health\n- Lead volume\n- Application volume\n- Pre-approval volume\n- Contracts\n- Closed units\n- Closed volume\n- Spend\n- ROI\n- Open issues\n- Growth opportunities\n- Corrective action\n- Next review date\n- Next action"
+    },
+    {
+      "list": "Events",
+      "name": "TEMPLATE - Event",
+      "description": "Template checklist:\n- Event name\n- Event type\n- Related partner/team\n- Event date\n- Budget\n- Vendors\n- Marketing/promotion\n- Invite list\n- Planning tasks\n- Finalization tasks\n- Execution tasks\n- Post-event follow-up\n- ROI review\n- Notes\n- Next action"
+    },
+    {
+      "list": "Sales Coaching",
+      "name": "TEMPLATE - Employee Coaching",
+      "description": "Template checklist:\n- Employee name\n- Coaching topic\n- Observation\n- Goal\n- Action item\n- Follow-up date\n- Metrics\n- Notes\n- Next action"
+    },
+    {
+      "list": "Performance Management",
+      "name": "TEMPLATE - Performance Management",
+      "description": "Template checklist:\n- Employee name\n- Performance area\n- Data / examples\n- Feedback\n- Development plan\n- Follow-up date\n- Leadership notes\n- Next action"
+    },
+    {
+      "list": "Compensation Management",
+      "name": "TEMPLATE - Compensation Review",
+      "description": "Template checklist:\n- Employee name\n- Compensation question\n- Data needed\n- Budget/profitability review\n- Approval needed\n- Decision\n- Communication\n- Notes\n- Next action"
+    },
+    {
+      "list": "Partner ROI Reporting",
+      "name": "TEMPLATE - Reporting ROI",
+      "description": "Template checklist:\n- Reporting period\n- Related partner/team/loan officer\n- Applications\n- Pre-approvals\n- Contracts\n- Closed units\n- Closed volume\n- Lead volume\n- Conversion rate\n- Spend\n- ROI\n- Monthly projection\n- Quarterly projection\n- Annual projection\n- Variance\n- Corrective action\n- Next review date"
+    },
+    {
+      "list": "Household Budget",
+      "name": "TEMPLATE - Personal Budget",
+      "description": "Template checklist:\n- Income\n- Recurring payments\n- Variable expenses\n- Savings\n- Retirement / investments\n- Review date\n- Action items\n- Notes"
+    },
+    {
+      "list": "Home Maintenance",
+      "name": "TEMPLATE - Home Maintenance",
+      "description": "Template checklist:\n- Item\n- Frequency\n- Vendor\n- Due date\n- Status\n- Recurrence\n- Notes"
+    },
+    {
+      "list": "Medical Reminders",
+      "name": "TEMPLATE - Medical Reminder",
+      "description": "Template checklist:\n- Reminder type\n- Appointment/task\n- Due date\n- Follow-up\n- Reference only\n- Notes"
+    },
+    {
+      "list": "Personal Contacts",
+      "name": "TEMPLATE - Personal Relationship",
+      "description": "Template checklist:\n- Person\n- Relationship\n- Contact info\n- Birthday / important dates\n- Preferences\n- Last touch\n- Next touch\n- Notes\n- Reminder cadence"
+    }
+  ],
+  "sample_capture_tasks": [
+    {
+      "list": "Universal Capture Inbox",
+      "name": "Sarah from ABC Realty sent me a lead named Mike Davis. Call him tomorrow and update Sarah.",
+      "description": "Classification: Work / Mortgage Lead\nSuggested Category: New Lead\nRelated Person: Sarah\nRelated Company/Team: ABC Realty\nRelated Borrower: Mike Davis\nSuggested Due Date: Tomorrow\nNext Action: Call Mike Davis and update Sarah\nNeeds Review: Yes, confirm contact info and loan officer owner"
+    },
+    {
+      "list": "Universal Capture Inbox",
+      "name": "The Smith file is pending income docs and the realtor needs an update.",
+      "description": "Classification: Work / Active Loan\nSuggested Category: Loan Issue / Active File\nRelated Loan: Smith file\nSuggested Stage: Pending Income Docs\nNext Action: Follow up on income docs and update realtor\nNeeds Review: Yes, identify realtor and customer"
+    },
+    {
+      "list": "Universal Capture Inbox",
+      "name": "Schedule an ROI review with the Johnson Team next month.",
+      "description": "Classification: Work / Partner ROI\nSuggested Category: Partner ROI Reporting\nRelated Partner: Johnson Team\nSuggested Due Date: First business week next month\nNext Action: Schedule ROI review\nNeeds Review: Yes, confirm spend and reporting period"
+    },
+    {
+      "list": "Universal Capture Inbox",
+      "name": "I met Brian from Compass. He may be a good referral partner. Follow up next week.",
+      "description": "Classification: Work / New Business Development\nSuggested Category: Business Development Prospect\nRelated Person: Brian\nRelated Company: Compass\nSuggested Due Date: Next Monday\nNext Action: Follow up and schedule discovery conversation\nNeeds Review: Yes, add contact info"
+    },
+    {
+      "list": "Universal Capture Inbox",
+      "name": "Plan a lunch and learn with the Miller Team in September.",
+      "description": "Classification: Work / Event\nSuggested Category: Event Planning\nRelated Partner/Team: Miller Team\nSuggested Stage: Idea / Dreaming\nNext Action: Choose exact date and scope\nNeeds Review: Yes, confirm budget and location"
+    },
+    {
+      "list": "Universal Capture Inbox",
+      "name": "Remind me to renew my license plates.",
+      "description": "Classification: Personal / Household Admin\nSuggested Category: Household Admin\nSuggested Due Date: Determine renewal due date within 7 days\nNext Action: Check renewal deadline\nNeeds Review: Yes"
+    },
+    {
+      "list": "Universal Capture Inbox",
+      "name": "John likes golf and his birthday is in March.",
+      "description": "Classification: Relationship Note\nSuggested Category: Personal or Partner Contact\nRelated Person: John\nNote: Likes golf; birthday in March\nNext Action: Confirm whether John is personal contact, realtor, partner, or employee\nNeeds Review: Yes"
+    },
+    {
+      "list": "Universal Capture Inbox",
+      "name": "Create a task to review my monthly household budget.",
+      "description": "Classification: Personal / Finance\nSuggested Category: Household Budget\nSuggested Recurrence: Monthly\nNext Action: Review budget\nNeeds Review: No unless recurrence cannot be configured"
+    }
+  ],
+  "manual_setup_tasks": [
+    {
+      "list": "Manual Setup Required",
+      "name": "Manual Setup - Custom Fields",
+      "priority_label": "Critical",
+      "description": "Create native ClickUp custom fields later for:\n- Domain\n- Module\n- Object Type\n- Related Customer / Borrower\n- Related Lead\n- Related Loan File\n- Related Realtor\n- Related Realtor Team\n- Related Brokerage\n- Related Loan Officer\n- Related Internal Employee\n- Related Vendor\n- Related Event\n- Related Partner\n- State / Market\n- Stage\n- Follow-Up Date\n- Last Contact Date\n- Next Contact Date\n- Waiting On\n- Blocked Reason\n- Source / Capture Method\n- Original Capture Text\n- AI Confidence\n- Needs Review\n- Note Only / No Action\n- Relationship Health\n- Revenue Impact\n- Deadline Risk\n- Follow-Up Required\n- Last Reviewed Date\n\nPriority: Critical"
+    },
+    {
+      "list": "Manual Setup Required",
+      "name": "Manual Setup - Tags",
+      "priority_label": "Important",
+      "description": "Create tags later:\nlead, loan, borrower, realtor, realtor-team, brokerage, referral-partner, loan-officer, partner-management, new-business-development, existing-partner, event, marketing, content, vendor, budget, roi, ap, ar, reporting, business-planning, sales-coaching, performance-management, compensation, internal-team, operations, manager-feedback, business-coach, career-planning, customer-service, complaint, qualification-issue, underwriting, closing, post-closing, refinance-opportunity, waiting-on-client, waiting-on-realtor, waiting-on-operations, blocked, needs-review, personal-finance, savings, retirement, taxes, home, home-maintenance, medical, health, travel, personal-event, personal-relationship, hobby, creative, note-only, memory, archive.\n\nPriority: Important"
+    },
+    {
+      "list": "Manual Setup Required",
+      "name": "Manual Setup - Dashboards and Views",
+      "priority_label": "Important",
+      "description": "Create native dashboard/views later for:\n- Noah Command Center\n- Mortgage Pipeline Dashboard\n- Active Loan Risk Dashboard\n- Partner Dashboard\n- Business Development Dashboard\n- Internal Team Dashboard\n- Reporting ROI Dashboard\n- Personal OS Dashboard\n\nPriority: Important"
+    },
+    {
+      "list": "Manual Setup Required",
+      "name": "Manual Setup - Automations",
+      "priority_label": "Critical",
+      "description": "Create native automations later for:\n- New lead follow-up\n- Three-attempt lead contact sequence\n- Daily follow-up for pending lead/customer items\n- Realtor update reminders\n- Partner touchpoint reminders\n- ROI review reminders\n- Event follow-up\n- Employee coaching follow-up\n- Personal budget review\n- Home maintenance reminders\n- Medical reminders\n- Capture Inbox review\n\nPriority: Critical"
+    },
+    {
+      "list": "Manual Setup Required",
+      "name": "Manual Setup - Recurring Tasks",
+      "priority_label": "Critical",
+      "description": "Create recurring tasks later:\n- Morning Briefing every weekday at 8:30 AM Eastern\n- Evening Wrap-Up every weekday at 5:00 PM Eastern\n- Weekly Review every Friday at 3:00 PM Eastern\n- Monthly Business Review\n- Monthly Personal Finance Review\n- Quarterly Planning Review\n- Annual Planning Review\n\nPriority: Critical"
+    },
+    {
+      "list": "Manual Setup Required",
+      "name": "Manual Setup - Native Templates",
+      "priority_label": "Helpful",
+      "description": "Convert template tasks into native ClickUp templates when possible.\n\nPriority: Helpful"
+    },
+    {
+      "list": "Manual Setup Required",
+      "name": "Manual Setup - Relationship Fields",
+      "priority_label": "Important",
+      "description": "Create native relationships later for:\n- Lead to borrower\n- Borrower to realtor\n- Realtor to team\n- Team to brokerage\n- Partner to events\n- Partner to ROI records\n- Employee to coaching/performance records\n\nPriority: Important"
+    }
+  ]
+}
